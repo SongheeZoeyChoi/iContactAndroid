@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="3dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_selected_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/main_font"
+        android:textColor="#000000"
+        android:text="name"
+        android:paddingLeft="10px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <!--GONE-->
+        <TextView
+            android:id="@+id/tv_selected_job_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:textSize="15dp"
+            android:fontFamily="@font/main_font"
+            android:textColor="#404040"
+            android:paddingLeft="10px"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_selected_company"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:textSize="15dp"
+            android:fontFamily="@font/main_font"
+            android:textColor="#404040"
+            android:text="company "
+            android:paddingLeft="10px"/>
+
+        <TextView
+            android:id="@+id/tv_selected_tel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:fontFamily="@font/main_font"
+            android:textColor="#404040"
+            android:text="xxx-xxx-xxxx"
+            android:paddingLeft="10px"/>
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

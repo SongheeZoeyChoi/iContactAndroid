@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardUseCompatPadding="true"
+    android:layout_gravity="center"
+    android:id="@+id/alert_dialog_exit">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center"
+        android:background="#FFFFFF"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp">
+
+        <TextView
+            android:id="@+id/tv_progress_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:fontFamily="@font/main_font"
+            android:textColor="#242424"
+            android:text="확인 버튼을 누르면 종료합니다."
+            android:paddingLeft="20dp"
+            android:padding="20dp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#E1E1E1"
+                card_view:cardCornerRadius="20dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/btn_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="종료"
+                    android:background="@android:color/transparent"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#E1E1E1"
+                card_view:cardCornerRadius="20dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/btn_tohome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="취소"
+                    android:background="@android:color/transparent"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

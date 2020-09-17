@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <cache-path
+        name="cache"
+        path="Andriod/data/com.androidlec.addcontact/files/Pictures" /> <!--Context.getCacheDir() 내부 저장소-->
+    <files-path
+        name="files"
+        path="Andriod/data/com.androidlec.addcontact/files/Pictures" /> <!--Context.getFilesDir() 내부 저장소-->
+
+    <external-path
+        name="external"
+        path="Andriod/data/com.androidlec.addcontact/files/Pictures"/>  <!--  Environment.getExternalStorageDirectory() 외부 저장소-->
+    <external-cache-path
+        name="external-cache"
+        path="."/> <!--  Context.getExternalCacheDir() 외부 저장소-->
+    <external-files-path
+        name="external-files"
+        path="."/> <!--  Context.getExternalFilesDir() 외부 저장소-->
+</paths>

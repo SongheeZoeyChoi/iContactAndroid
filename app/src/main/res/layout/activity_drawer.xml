@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_gravity="end"
+    android:background="#FFFFFF">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:background="#00ACEE"
+    android:layout_height="50dp"
+    android:gravity="center_vertical">
+
+    <EditText
+        android:id="@+id/edit_drawer_search"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:hint="이름 또는 회사명"
+        android:lineHeight="0dp"
+        android:background="#00ACEE"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/btn_drawer_search"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/main_font"
+        android:background="@drawable/search"/>
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>

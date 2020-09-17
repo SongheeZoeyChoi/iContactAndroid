@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.newContactActivity"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+
+
+    <!--액션바-->
+    <LinearLayout
+        android:id="@+id/ab_pick_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00ACEE">
+        <ImageView
+            android:id="@+id/btn_addressinfo_back"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/tv_pick_Title"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:layout_weight="5"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/main_font"
+            android:text="명함정보"
+            />
+        <TextView
+            android:id="@+id/menu_update"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:fontFamily="@font/main_font"
+            android:text="편집"/>
+
+        <TextView
+            android:id="@+id/btn_popup"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:background="@drawable/menu_vertical_white"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+    <!--    이미지 + 카메라 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/pick_imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/contact_default"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".InsertActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:fontFamily="@font/main_font"
+                android:textSize="23dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/tv_pick_aName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity=""
+                android:paddingTop="7dp"
+                android:text="이름"
+                android:textColor="@color/main_font"
+                android:fontFamily="@font/main_font"
+                android:textSize="20dp"
+                />
+
+            <View
+                android:tag="divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTintMode="src_over"
+                android:backgroundTint="@color/divider"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="휴대폰"
+                android:textColor="#000000"
+                android:fontFamily="@font/main_font"
+                android:textSize="23dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pick_aMobile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity=""
+                android:paddingTop="7dp"
+                android:textColor="@color/main_font"
+                android:fontFamily="@font/main_font"
+                android:textSize="20dp"
+                />
+
+            <View
+                android:tag="divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTintMode="src_over"
+                android:backgroundTint="@color/divider"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이메일"
+                android:textColor="#000000"
+                android:fontFamily="@font/main_font"
+                android:textSize="23dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pick_aEmail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity=""
+                android:paddingTop="7dp"
+                android:textColor="@color/main_font"
+                android:fontFamily="@font/main_font"
+                android:textSize="20dp"
+                />
+            <View
+                android:tag="divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTintMode="src_over"
+                android:backgroundTint="@color/divider"
+                android:background="?android:attr/listDivider" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회사명"
+                android:textColor="#000000"
+                android:fontFamily="@font/main_font"
+                android:textSize="23dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pick_aCompany"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity=""
+                android:paddingTop="7dp"
+                android:textColor="@color/main_font"
+                android:fontFamily="@font/main_font"
+                android:textSize="20dp"
+                />
+            <View
+                android:tag="divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTintMode="src_over"
+                android:backgroundTint="@color/divider"
+                android:background="?android:attr/listDivider" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="부서"
+                android:textColor="#000000"
+                android:fontFamily="@font/main_font"
+                android:textSize="23dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pick_aDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity=""
+                android:paddingTop="7dp"
+                android:textColor="@color/main_font"
+                android:fontFamily="@font/main_font"
+                android:textSize="20dp"
+                />
+            <View
+                android:tag="divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTintMode="src_over"
+                android:backgroundTint="@color/divider"
+                android:background="?android:attr/listDivider" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="직책"
+                android:textColor="#000000"
+                android:fontFamily="@font/main_font"
+                android:textSize="23dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pick_aJob"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity=""
+                android:paddingTop="7dp"
+                android:textColor="@color/main_font"
+                android:fontFamily="@font/main_font"
+                android:textSize="20dp"
+                />
+            <View
+                android:tag="divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTintMode="src_over"
+                android:backgroundTint="@color/divider"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="유선전화"
+                android:textColor="#000000"
+                android:fontFamily="@font/main_font"
+                android:textSize="23dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pick_aTel"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity=""
+                android:layout_marginBottom="15dp"
+                android:paddingTop="7dp"
+                android:textColor="@color/main_font"
+                android:fontFamily="@font/main_font"
+                android:textSize="20dp"
+                />
+            <View
+                android:tag="divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTintMode="src_over"
+                android:backgroundTint="@color/divider"
+                android:background="?android:attr/listDivider" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity=""
+                android:text="주소"
+                android:textColor="#000000"
+                android:fontFamily="@font/main_font"
+                android:textSize="23dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pick_aAddress"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="15dp"
+                android:paddingTop="7dp"
+                android:textColor="@color/main_font"
+                android:fontFamily="@font/main_font"
+                android:textSize="20dp"
+                />
+            <View
+                android:tag="divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTintMode="src_over"
+                android:backgroundTint="@color/divider"
+                android:background="?android:attr/listDivider" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="위치 정보"
+                android:textColor="#000000"
+                android:fontFamily="@font/main_font"
+                android:textSize="23dp"
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/map"
+                    tools:context=".MapsActivity"
+                    android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:enabled="false"
+                    android:background="#00000000"/>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
